@@ -5,7 +5,7 @@
 groups = ["default"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:6fc8f8d07620b550cab8aac046a3fc6ecd51729c4b8aaf98fe1068d193486a60"
+content_hash = "sha256:6e98f528a3d3ba753e1e87b24b3050216cd95f235625033476762a5e6807ce8a"
 
 [[package]]
 name = "contourpy"
@@ -61,6 +61,21 @@ files = [
     {file = "fonttools-4.51.0-cp312-cp312-win_amd64.whl", hash = "sha256:b3c61423f22165541b9403ee39874dcae84cd57a9078b82e1dce8cb06b07fa2e"},
     {file = "fonttools-4.51.0-py3-none-any.whl", hash = "sha256:15c94eeef6b095831067f72c825eb0e2d48bb4cea0647c1b05c981ecba2bf39f"},
     {file = "fonttools-4.51.0.tar.gz", hash = "sha256:dc0673361331566d7a663d7ce0f6fdcbfbdc1f59c6e3ed1165ad7202ca183c68"},
+]
+
+[[package]]
+name = "imageio"
+version = "2.34.1"
+requires_python = ">=3.8"
+summary = "Library for reading and writing a wide range of image, video, scientific, and volumetric data formats."
+groups = ["default"]
+dependencies = [
+    "numpy",
+    "pillow>=8.3.2",
+]
+files = [
+    {file = "imageio-2.34.1-py3-none-any.whl", hash = "sha256:408c1d4d62f72c9e8347e7d1ca9bc11d8673328af3913868db3b828e28b40a4c"},
+    {file = "imageio-2.34.1.tar.gz", hash = "sha256:f13eb76e4922f936ac4a7fec77ce8a783e63b93543d4ea3e40793a6cabd9ac7d"},
 ]
 
 [[package]]
