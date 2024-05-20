@@ -34,9 +34,8 @@ def pso(
             np.fromiter(map(fitfn, positions), dtype=np.float32),
             np.fromiter(map(fitfn, pbest), dtype=np.float32),
         )
-        mask = np.tile(cond.reshape(-1, 1), (1, d))
-        #   apply mask to select positions that are better than the previous personal best positions
-        pbest = np.where(mask, positions, pbest)
+        #   apply mask to update positions that are better than the previous personal best positions
+        pbest[cond, :] = positions[cond, :]
         # update neighborhood best position
         gbest = np.array([min(pbest, key=fitfn)], dtype=positions.dtype)
         # update velocities
