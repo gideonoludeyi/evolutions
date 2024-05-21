@@ -26,6 +26,8 @@ def plot_pso(fitfn, c1, c2, maxiter, w=None, popsize=10, random_state=None, out=
     x_min = x.ravel()[z.argmin()]
     y_min = y.ravel()[z.argmin()]
     for i, positions in enumerate(generator):
+        # plot only particles that within boundary
+        positions = positions[np.all((positions >= 0.0) & (positions <= 5.0), axis=1)]
         # plot the particles' positions for the current iteration
         fig, ax = plt.subplots()
         img = ax.imshow(
