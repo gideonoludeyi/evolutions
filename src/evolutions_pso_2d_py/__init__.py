@@ -33,7 +33,7 @@ def pso_cli_executor(args: argparse.Namespace):
 
 pso_parser = subparser_creator.add_parser("run")
 pso_parser.add_argument(
-    "-p", "--popsize", dest="popsize", type=int, required=False, default=10
+    "-p", "--popsize", dest="popsize", type=int, required=False, default=20
 )
 pso_parser.add_argument(
     "-g", "--iterations", dest="maxiter", type=int, required=False, default=50
@@ -88,7 +88,7 @@ def plot_pso_cli_executor(args: argparse.Namespace):
 
 plot_parser = subparser_creator.add_parser("plot")
 plot_parser.add_argument(
-    "-p", "--popsize", dest="popsize", type=int, required=False, default=10
+    "-p", "--popsize", dest="popsize", type=int, required=False, default=20
 )
 plot_parser.add_argument(
     "-g", "--iterations", dest="maxiter", type=int, required=False, default=50
