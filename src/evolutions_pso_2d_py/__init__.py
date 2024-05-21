@@ -39,10 +39,10 @@ pso_parser.add_argument(
     "-g", "--iterations", dest="maxiter", type=int, required=False, default=50
 )
 pso_parser.add_argument(
-    "-c", "--cognitive", dest="c1", type=float, required=False, default=1.0
+    "-c", "--cognitive", dest="c1", type=float, required=False, default=1.49618
 )
 pso_parser.add_argument(
-    "-s", "--social", dest="c2", type=float, required=False, default=0.5
+    "-s", "--social", dest="c2", type=float, required=False, default=1.49618
 )
 pso_parser.add_argument(
     "-w",
@@ -94,10 +94,10 @@ plot_parser.add_argument(
     "-g", "--iterations", dest="maxiter", type=int, required=False, default=50
 )
 plot_parser.add_argument(
-    "-c", "--cognitive", dest="c1", type=float, required=False, default=1.0
+    "-c", "--cognitive", dest="c1", type=float, required=False, default=1.49618
 )
 plot_parser.add_argument(
-    "-s", "--social", dest="c2", type=float, required=False, default=0.5
+    "-s", "--social", dest="c2", type=float, required=False, default=1.49618
 )
 plot_parser.add_argument(
     "-w",

@@ -5,8 +5,8 @@ def pso(
     fitfn,
     popsize=10,
     maxiter=50,
-    c1=1.0,
-    c2=0.5,
+    c1=1.49618,
+    c2=1.49618,
     w=None,
     min_=0.0,
     max_=5.0,
@@ -16,7 +16,7 @@ def pso(
     perform the PSO algorithm
     yields the positions of the particles at each iteration
     """
-    w = w or (0.1, 0.1)
+    w = w or (0.729844, 0.729844)
     rng = np.random.default_rng(random_state)
     d = len(w)
     W = np.diag(w)
@@ -53,8 +53,8 @@ def pso_best(
     fitfn,
     popsize=10,
     maxiter=50,
-    c1=1.0,
-    c2=0.5,
+    c1=1.49618,
+    c2=1.49618,
     w=None,
     min_=0.0,
     max_=5.0,
