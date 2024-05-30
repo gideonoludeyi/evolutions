@@ -5,10 +5,17 @@ description = "Default template for PDM package"
 authors = [
     {name = "gideonoludeyi", email = "49620086+gideonoludeyi@users.noreply.github.com"},
 ]
-dependencies = []
+dependencies = [
+    "numpy>=1.26.4",
+    "matplotlib>=3.9.0",
+]
 requires-python = ">=3.12"
 readme = "README.md"
 license = {text = "MIT"}
+
+[project.scripts]
+pso = "cpso:main"
+
 
 [build-system]
 requires = ["pdm-backend"]
