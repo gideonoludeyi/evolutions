@@ -16,10 +16,15 @@ def pso(algorithm: algorithms.ParticleSwarmOptimization, niters=50):
     return best_swarm.best()
 
 
-def plot(algorithm: algorithms.ParticleSwarmOptimization, niters=50, out="plot.png"):
+def plot(
+    algorithm: algorithms.ParticleSwarmOptimization, niters=50, out="tmp/plot.png"
+):
     fits = [swarm.bestfit() for swarm, _ in zip(algorithm, range(niters))]
     fig, ax = plt.subplots()
     ax.plot(np.arange(len(fits)), fits)
+    ax.set_title("Fitness over time")
+    ax.set_ylabel("Fitness")
+    ax.set_xlabel("Iterations")
     fig.savefig(out)
     plt.close(fig)
 

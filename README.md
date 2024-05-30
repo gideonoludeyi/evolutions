@@ -11,7 +11,7 @@ $ pso run --seed 123
 ```
 3. Plot Results
 ```sh
-$ pso plot --seed 123 -o plot.gif
+$ pso plot --seed 123 -o tmp/plot.png
 ```
 4. Get Help
 Run `pso run --help` to check which hyperparameters can be modified.
