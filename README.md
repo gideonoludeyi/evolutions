@@ -5,9 +5,9 @@
 ```sh
 $ pip install .
 ```
-2. Run PSO
+2. Run PSO (with Ackley fitness function)
 ```sh
-$ pso run --seed 123
+$ pso run --seed 123 --fitness ackley
 ```
 3. Plot Results
 ```sh
