@@ -5,10 +5,15 @@ description = "Default template for PDM package"
 authors = [
     {name = "gideonoludeyi", email = "49620086+gideonoludeyi@users.noreply.github.com"},
 ]
-dependencies = []
+dependencies = [
+    "numpy>=1.26.4",
+]
 requires-python = ">=3.12"
 readme = "README.md"
 license = {text = "MIT"}
+
+[project.scripts]
+tsp = "tsp_ga:main"
 
 [build-system]
 requires = ["pdm-backend"]
