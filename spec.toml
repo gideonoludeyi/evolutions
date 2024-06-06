@@ -1,0 +1,37 @@
+[selector]
+[selector."tour2"]
+type = "tournament"
+k = 2
+
+[selector."tour3"]
+type = "tournament"
+k = 3
+
+[selector."tour4"]
+type = "tournament"
+k = 4
+
+[selector."tour5"]
+type = "tournament"
+k = 5
+
+[crossover]
+[crossover."uox"]
+type = "uniform-order-crossover"
+
+[mutator]
+[mutator."swap"]
+type = "swap-mutator"
+
+[terminator]
+[terminator."100gen"]
+type = "generation-limit"
+n = 100
+
+[terminator."1kgen"]
+type = "generation-limit"
+n = 1_000
+
+[terminator."10kgen"]
+type = "generation-limit"
+n = 10_000

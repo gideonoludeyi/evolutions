@@ -7,13 +7,15 @@ authors = [
 ]
 dependencies = [
     "numpy>=1.26.4",
+    "scipy>=1.13.1",
 ]
 requires-python = ">=3.12"
 readme = "README.md"
 license = {text = "MIT"}
 
 [project.scripts]
-tsp = "tsp_ga:main"
+ga = "ga:main"
+tsp = "tsp:main"
 
 [build-system]
 requires = ["pdm-backend"]
